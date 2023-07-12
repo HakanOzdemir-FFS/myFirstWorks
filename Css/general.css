@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding-bottom: 1000px;
+    padding-left: 8px;
+}
+p{
+    margin: 0;
+    font-family: roboto;
+}
+div{
+    font-family: roboto, arial;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto,arial;
+}

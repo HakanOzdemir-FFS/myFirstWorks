@@ -1,0 +1,176 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(207, 206, 206);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.left-section {
+    display: flex;
+    justify-items: center;
+    width: 200px;
+    margin-left: 20px;
+
+}
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+
+}
+
+.logo-menu {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    margin-left: 20px;
+    justify-items: center;
+    cursor: pointer;
+    
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    height: 30px;
+    position: relative;
+   
+}
+.search-form{
+    border: solid 0.5px gainsboro;
+    flex: 1;
+    padding-left: 10px;
+    
+}
+
+.search{
+    display: flex;
+    opacity: 0.7;
+    border: solid 0.5px gainsboro;
+    background-color: rgba(220, 220, 220, 0.1);
+    position: relative;
+    height: 29px;
+    cursor: pointer;
+}
+.search:hover{
+    opacity: 1;
+    background-color: rgba(220, 220, 220, 0.5);
+    transition: 0.5s;
+    
+}
+
+.micrafone{
+    opacity: 0.3;
+    width: 25px;
+    border: solid 1px;
+    border-radius: 1000px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.micrafone:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 15px;
+    margin-left: 25px;
+
+
+}
+
+.upload,.apps,.notifications,.channel{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+
+.notifications-count{
+    background-color: red;
+    color: white;
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+
+}
+.notifications-bar,
+.apps-bar,
+.channel-bar,
+.upload-bar{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.tooltip-text{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(147, 147, 153);
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -30px;
+
+    
+}
+
+.notifications-bar:hover .tooltip-text,
+.apps-bar:hover .tooltip-text,
+.channel-bar:hover .tooltip-text,
+.upload-bar:hover .tooltip-text,
+.search:hover .tooltip-text,
+.micrafone:hover .tooltip-text
+{
+    transition: 0.5s;
+    opacity: 1;
+    }
+
+    
