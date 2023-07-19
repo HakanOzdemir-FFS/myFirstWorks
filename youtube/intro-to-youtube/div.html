@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Example</title>
+    <style>
+        p{
+            margin-left: 20px;
+            font-family: arial;
+
+        }
+        .addFriend{
+            font-size: 20px;
+            color: white;
+            font-family: Arial;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+        }
+
+        .profilePhoto{
+            width: 100px;
+            height: 150px;
+            object-fit: fill;
+            margin-left: 20px;
+            
+            
+        }
+        .divExample{
+            width: 150px;
+            display: inline-block;
+            border: solid 1px;
+            vertical-align: top;
+            box-shadow: -1px 1px 5px rgb(59, 57, 57) ;
+        }
+        .photo-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="photo-grid">
+        <div class="divExample">
+            <img class="profilePhoto" src="img/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg" alt="">
+            <p><strong>Oliver</strong></p>
+            <p>2 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+        <div class="divExample">
+            <img  class="profilePhoto" src="img/indir.jpg" alt="">
+            <p><strong>Mimi</strong></p>
+            <p>3 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+        <div class="divExample">
+            <img class="profilePhoto" src="img/photo-1608848461950-0fe51dfc41cb.jpg" alt="">
+            <p><strong>Rex</strong></p>
+            <p>4 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+        <div class="divExample">
+            <img  class="profilePhoto" src="img/indir.jpg" alt="">
+            <p><strong>Mimi</strong></p>
+            <p>3 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+        <div class="divExample">
+            <img class="profilePhoto" src="img/photo-1608848461950-0fe51dfc41cb.jpg" alt="">
+            <p><strong>Rex</strong></p>
+            <p>4 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+        <div class="divExample">
+            <img class="profilePhoto" src="img/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg" alt="">
+            <p><strong>Oliver</strong></p>
+            <p>2 Mutual friends</p>
+            <button class="addFriend">Add Friend</button>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

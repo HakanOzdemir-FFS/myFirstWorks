@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grip Exercise</title>
+    <style>
+        body {
+            padding-bottom: 1000px;
+        }
+
+        .grid-1 {
+            display: grid;
+            grid-template-rows: 1fr 4fr 1fr;
+            height: 70vh;
+
+            row-gap: 20px;
+
+        }
+
+        .all-selection {
+            display: grid;
+            grid-template-rows: 100px 300px;
+            row-gap: 20px;
+            text-align: center;
+        }
+
+        .bottom-selection {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-areas:
+                "a a a a    a a a a    a a a a"
+
+                "b b b b    b b b b    e e e e"
+                "b b b b    b b b b    e e e e"
+
+                "c c c c    d d d d    e e e e";
+            grid-gap: 20px;
+        }
+
+        .box-1 {
+            grid-area: a;
+        }
+
+        .box-2 {
+            grid-area: b;
+        }
+
+        .box-3 {
+            grid-area: c;
+        }
+
+        .box-4 {
+            grid-area: d;
+        }
+
+        .box-5 {
+            grid-area: e;
+        }
+        .container-2{
+            text-align: center;
+            font-size: 50px;
+            display: grid;
+            height: 400px;
+            grid-template-columns: 1fr  1fr  1fr;
+            grid-template-rows: 400px 400px 400px;
+            column-gap: 20px;
+            row-gap: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-1">
+        <div style="background-color: aqua; ">Header</div>
+        <div style="background-color: yellowgreen; "> Main</div>
+        <div style="background-color: blue; ">Footer</div>
+
+    </div>
+
+    <hr>
+    <hr>
+    <div class="all-selection">
+        <div style="background-color: aqua;">
+            A SELECTION
+        </div>
+        <div class="bottom-selection">
+            <div style="background-color: rebeccapurple;">
+                B SELECTION
+            </div>
+            <div style="background-color: blue;">
+                C SELECTION
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <div class="container">
+        <div class="box-1" style="background-color: rebeccapurple;">A</div>
+        <div class="box-2" style="background-color: aqua;">B</div>
+        <div class="box-3" style="background-color: red;">C</div>
+        <div class="box-4" style="background-color: yellow;">D</div>
+        <div class="box-5" style="background-color: blue;">E</div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="container-2">
+        <div class="box-6" style="background-color: rebeccapurple;">A</div>
+        <div class="box-7" style="background-color: aqua;">B</div>
+        <div class="box-8" style="background-color: red;">C</div>
+        <div class="box-9" style="background-color: yellow;">D</div>
+        <div class="box-10" style="background-color: blue;">E</div>
+
+</body>
+
+</html>

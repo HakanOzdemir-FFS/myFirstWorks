@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        div{
+            font-family: roboto, arial;
+        }
+        .flexbox-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: blueviolet;
+            height: 60px;
+            align-items: center;
+            
+
+        }
+
+        .home {
+            margin-left: 20px;
+            width: 100px;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        .search {
+            margin-left: 40px;
+            margin-right: 50px;
+           
+        }
+
+        .download {
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+            border: solid 1px;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            font-family: roboto, arial;
+            border-radius: 5px;
+            
+            
+            
+
+        }
+        .bar1{
+            border-radius: 20px;
+            flex: 1;
+            width: 600px;
+            height: 30px;
+            font-family: roboto, arial;
+            font-size: 20px;
+            text-align: start;
+            padding-left: 20px;
+        }
+        .download-text{
+            display: flex;
+            align-items: center;
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox-header">
+        <div class="home">
+            <p>Home</p>
+        </div>
+        <div class="search"><input class="bar1" type="text" placeholder="Search"></div>
+        <div class="download">
+            <p class="download-text">Download</p>
+        </div>
+    </div>
+</body>
+
+</html>

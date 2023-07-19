@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        p {
+            font-family: roboto, arial;
+            margin: 0;
+         
+        }
+        h6 {
+            color: rgb(96, 96, 96);
+            opacity: 0.5;
+            font-family: roboto, arial;
+            margin: 0;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 20px;            
+        }
+
+        .container {
+            display: flex;
+            border: solid 1px rgba(96, 96, 96, 0.5);
+            width: 50%;
+            flex-direction: column;
+            box-shadow: -1px -1px 5px 2px; 
+            
+        }
+
+        .cat1,.cat2,.cat3 {
+            display: grid;
+            grid-template-areas:
+                "e e e a a a a a a a a a a a a a d d d"
+                "e e e b b b b b b b b b b b b b b b b"
+                "e e e c c c c c c c c c c c c c c c c";
+            margin-bottom: 20px;
+            margin-right: 50px;
+            
+        }
+
+        .aaa {
+            grid-area: a;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .bbb {
+            grid-area: b;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .ccc {
+            grid-area: c;
+            margin: 0;
+            opacity: 0.5;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 20px;
+        }
+
+        .ddd {
+            grid-area: d;
+            margin: 0;
+            color: rgb(96, 96, 96);
+            opacity: 0.5;
+        }
+
+
+        .catp1,
+        .catp2,
+        .catp3 {
+            display: flex;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            grid-area: e;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h6>ALL INBOXES</h6>
+        <div class="cat1">
+            <img class="catp1"
+                src="img/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg" alt="">
+            <p class="aaa">Chewy Promotions</p>
+            <p class="ddd">14.58 PM</p>
+            <p class="bbb">Biggest sales of the year!</p>
+            <p class="ccc">Hey there! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur?</p>
+        </div>
+        <div class="cat2">
+            <img class="catp2" src="img/indir.jpg" alt="">
+            <p class="aaa">Chewy Promotions</p>
+            <p class="ddd">14.58 PM</p>
+            <p class="bbb">Biggest sales of the year!</p>
+            <p class="ccc">Hey there! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur?</p>
+        </div>
+        <div class="cat3">
+            <img class="catp3" src="img/photo-1608848461950-0fe51dfc41cb.jpg" alt="">
+            <p class="aaa">Chewy Promotions</p>
+            <p class="ddd">14.58 PM</p>
+            <p class="bbb">Biggest sales of the year!</p>
+            <p class="ccc">Hey there! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, pariatur?</p>
+        </div>
+    </div>
+</body>
+
+</html>
