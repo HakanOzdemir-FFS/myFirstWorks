@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrowDownMenu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+        nav > ul{
+            background-color: #23dbdb;
+            height: 50px;
+
+        }
+        nav ul{
+            display: inline-block;
+        }
+        nav > ul > li {
+            float: left;
+            width: 100px;
+            position: relative;
+            border: solid 1px;
+        }
+        nav > ul > li > a{
+            display: block;
+            padding: 0 15px;
+            line-height: 50px;
+        }
+        ul ul{
+            background-color:  #23dbdb;
+            width: 100px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        li ul li{
+            border: solid 1px;
+            display: block;
+            padding: 7px 15px;
+            
+        }
+        ul li:hover > ul{
+            opacity: 1;
+            transition: 0.4s;
+            visibility: visible;
+            width: 200px;
+        }
+        ul ul ul {
+            left:200px;
+            top: 0px;
+            
+        }
+        nav ul ul li{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Anasayfa</a>
+            </li>
+            <li>
+                <a href="#">Kategoriler</a>
+                <ul>
+                    <li><a href="#">Kategori 1</a>
+                        <ul>
+                            <li><a href="#">Kategori11</a>
+                                <ul>
+                                    <li><a href="#">ALT ALT</a></li>
+                                    <li><a href="#">ALT ALT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Kategori12</a></li>
+                            <li><a href="#">Kategori13</a></li>
+                            <li><a href="#">Kategori14</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="#">Kategori 2</a>
+                        <ul>
+                            <li><a href="#">Kategori11</a>
+                                <ul>
+                                    <li><a href="#">ALT ALT</a></li>
+                                    <li><a href="#">ALT ALT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Kategori12</a>
+                                <ul>
+                                    <li><a href="#">Kategori11</a>
+                                        <ul>
+                                            <li><a href="#">ALT ALT</a></li>
+                                            <li><a href="#">ALT ALT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Kategori12</a></li>
+                                    <li><a href="#">Kategori13</a></li>
+                                    <li><a href="#">Kategori14</a></li>
+                                </ul> </li>
+                            <li><a href="#">Kategori13</a></li>
+                            <li><a href="#">Kategori14</a></li>
+                        </ul> </li>
+                    <li><a href="#">Kategori 3</a></li>
+                    <li><a href="#">Kategori 4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">İletişim</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

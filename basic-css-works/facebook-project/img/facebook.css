@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-color: rgb(240, 242, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 112px 0 212px 0;
+}
+
+.container {
+    height: 540px;
+}
+
+.left-section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 500px;
+    margin-bottom: 170px;
+
+}
+
+.face-logo {
+    width: 301px;
+    height: 106px;
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.right-section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.log-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 390px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+input,
+button {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.log-inp,
+.Log-in-button {
+    width: 350px;
+    height: 50px;
+}
+
+.Log-in-button {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.create-acount {
+    width: 200px;
+    height: 50px;
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.create-page {
+    font-size: 13px;
+}
+
+.forgot-pass {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.forgot-pass a {
+    color: rgb(24, 119, 242);
+}
+
+.hr2 {
+    height: 1px;
+    width: 90%;
+    background-color: #ccc;
+    opacity: 0.8;
+}
+
+div ul li {
+    display: inline-block;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+div ul li a {
+    color: #8a9bbf;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.button-plus {
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #8a9bbf;
+}
+
+@media (max-width: 900px) {
+    .header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0 212px 0;
+
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 500px;
+        margin-bottom: 20px;
+
+    }
+    h3{
+        padding-left: 0;
+    }
+
+
+}

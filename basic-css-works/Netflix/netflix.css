@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+body,html{
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding-bottom: 1000px;
+}
+
+a{
+    text-decoration: none; 
+}
+
+p,h1,button,a,.input-type{
+    font-family: Roboto;
+    margin: 0;
+    color: white;
+}
+
+
+.background-image{
+    position: fixed;
+    z-index: -100;
+    background-image: url(img/TR-tr-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: brightness(0.5);
+    box-shadow: inset 0px 100px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.header{
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    width: 500px;
+    
+}
+.netflix-logo{
+    width: 167px;
+    height: 45px;
+}
+.content{
+    width: 314px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 7%;
+    left: 34%;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-rows: 40px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.input-type{
+    width: 274px;
+    height: 34px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    font-size: 17px;
+}
+.sign-in-button{
+    width: 314px;
+    display: block;
+    background-color: rgb(229, 9, 20);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    height: 50px;
+}
+.remember-me{
+    display: flex;
+}
+
+.checkbox1{
+    background-color: rgb(173,179,178);
+    width: 15px;
+    height: 15px;
+    accent-color: rgb(173,179,178);
+}
+.checkbox1::after{
+    accent-color: rgb(173,179,178);
+}
+.bottom-sign-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.remember-me-text{
+    color: rgb(173,179,178);
+    font-size: 13px;
+    align-self: center;
+}
+.are-you-new{
+    color: rgb(104,104,102);
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.are-you-new a{
+    color: white;
+    padding-left: 5px;
+}
+.are-you-new a:hover{
+    text-decoration: underline;
+}
+.bottom-new p{
+    color: rgb(104, 104, 102);
+    font-size: 13px;
+    display: inline;
+}
+.bottom-new a{
+    color: rgb(3, 96, 235);
+    font-size: 13px;
+}
+.bottom-new a:hover{
+    text-decoration: underline;
+}
+.footer-wrap{
+    position: fixed;
+    bottom: 0;
+    height: 260px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display:flex;
+    justify-content: space-around;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+div a{
+    color: rgb(96, 96, 96);
+    font-family: Roboto;
+    list-style: none;
+    white-space: nowrap;
+}
+div a:hover{
+    text-decoration: underline;
+}
+div ul li {
+    list-style: none;
+    
+}
+
+div ul li a{
+    color: rgb(96, 96, 96);
+    font-family: Roboto;
+    text-decoration: none;
+    list-style: none;
+    white-space: nowrap;
+}
+
+div ul li a:hover{
+   text-decoration: underline;
+}
+div li a{
+    text-decoration:none;
+    display: inline-block;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 50px;
+    width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    
+}
+ul{
+    padding-bottom: 20px;
+}
+.faq-maq-top2,.faq-maq-top{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+.language{
+    width: 110px;
+    height: 45px;
+    background-color: black;
+    align-items: center;
+    border: solid 0.01em white;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    
+}
+select {
+    background-color: black;
+    color: rgb(96, 96, 96);
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    font-family: Roboto;
+    font-size: 12px;
+ }
+
+.globe-solid{
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+
+
+
+
