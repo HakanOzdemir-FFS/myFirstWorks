@@ -1,0 +1,137 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: +1;
+}
+
+.nav-logo {
+    cursor: pointer;
+    margin-left: 11%;
+}
+
+.hakan-text {
+    font-size: 30px;
+    color: #f6a;
+    font-weight: bold;
+}
+
+.trading-text {
+    font-size: 26px;
+    color: white;
+}
+.buttons-menu{
+    color: white;
+}
+.nav-menu ul {
+    min-width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.buttons-menu {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+.buttons-menu::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    bottom: -4px;
+    transition: 0.5s;
+    transform: scale(0, 1);
+}
+
+.buttons-menu:hover::after {
+    transform: scale(1, 1); 
+}
+.nav-menu ul:hover > :not(:hover){
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.get-started-buttons {
+    padding: 12px 35px 12px 35px;
+    background-color: #f6a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.get-started-buttons:hover{
+    transform: scale(1.2);
+    filter: contrast(150%);
+}
+.get-started-buttons2{
+    margin-right: 11%;
+}
+.bars{
+    display: none;
+
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 450px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        row-gap: 10px;
+        background: linear-gradient(to bottom, #151938 25%, transparent);
+        max-width: 100%;
+    }
+    .nav-logo{
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        min-width: 350px;
+    }
+    .buttons-menu{
+        font-size: 12px;
+    }
+    nav .get-started-buttons{
+        display: none;
+    }
+
+    /* Different menü style
+    .bars{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 7px;
+    }*/
+    
+}

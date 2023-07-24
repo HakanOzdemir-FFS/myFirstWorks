@@ -1,0 +1,74 @@
+.app-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    row-gap: 50px;
+}
+.app-area > .trusted-text{
+    max-width: 900px;
+    text-align: center;
+}
+.apper{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+}
+.app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    margin-left: 20px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    background-color: #212541;
+    transition: 0.3s;
+}
+.app-container > .arrow-right-solid{
+    display: inline-block;
+    margin: 0;
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
+.app-container1 > .already-text{
+    font-size: 10px;
+}
+.app-container1 > .trusted-text{
+    font-size: 14px;
+}
+.app-container1{
+    margin-left: 10px;
+}
+.app-container:hover .arrow-right-solid {
+    filter: invert(67%) sepia(34%) saturate(5110%) hue-rotate(293deg) brightness(101%) contrast(101%);
+}
+.app-container:hover .app-container1 > .already-text{
+    color: #f6b;
+}
+.app-container:hover .app-container1 > .trusted-text{
+    color: #f6b;
+}
+.app-container:hover{
+    border:2px solid #f6b;
+    background-color: transparent;
+}
+
+@media (max-width: 450px){
+    .app-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .app-area > .trusted-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app-area > .already-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+    }
+}

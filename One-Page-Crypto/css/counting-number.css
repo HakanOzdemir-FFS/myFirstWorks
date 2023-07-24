@@ -1,0 +1,22 @@
+.counting{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pink-number{
+    font-size: 100px;
+    color: #f6b;
+}
+.counting div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (max-width: 450px){
+    .counting{
+        display: flex;
+        flex-direction: column;
+    }
+}

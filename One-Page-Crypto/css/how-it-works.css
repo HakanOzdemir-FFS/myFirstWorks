@@ -1,0 +1,50 @@
+.how-it-works{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.Crypto-Works-Image{
+    width: 650px;
+
+}
+.how-it-works-column{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column ;
+    width: 600px;
+    row-gap: 30px;
+}
+
+.check-solid{
+    width: 20px;
+    height: 20px;
+    filter: invert(51%) sepia(5%) saturate(7%) hue-rotate(329deg) brightness(98%) contrast(84%);
+    margin-right: 10px;
+}
+.check-row{
+    display: flex;
+    flex-flow: column;
+
+}
+
+@media (max-width: 450px){
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .how-it-works-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 350px;
+    }
+}

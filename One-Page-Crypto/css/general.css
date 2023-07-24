@@ -1,0 +1,27 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Poppins;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, #151938 25%, #56398a );
+    margin: 0;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+@media (max-width: 450px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

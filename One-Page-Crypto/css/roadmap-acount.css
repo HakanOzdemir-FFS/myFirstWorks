@@ -1,0 +1,91 @@
+.user-tie-solid {
+    height: 20px;
+    width: 20px;
+    filter: invert(51%) sepia(51%) saturate(1500%) hue-rotate(302deg) brightness(102%) contrast(101%);
+}
+
+.roadmap-acount {
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.horizonal-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+    width: 400px;
+    height: 250px;
+    padding-left: 50px;
+    border: 1px solid gray;
+    background-color: #212541;
+    transition: 0.3s;
+}
+.horizonal-card:nth-of-type(1){
+    border-radius: 50px 0 0 50px;
+}
+.horizonal-card:nth-of-type(3){
+    border-radius: 0 50px 50px 0;
+}
+.horizonal-card>.card-comment {
+    text-align: left;
+}
+.chevron-right-solid{
+    background-color: #212541;;
+    z-index: +1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -5%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 120px;
+}
+.chevron-right-solid-img{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(1%) saturate(7495%) hue-rotate(212deg) brightness(103%) contrast(100%);
+}
+.horizonal-card:hover{
+    background-color: rgba(33, 37, 65, 0.3);
+}
+
+@media (max-width: 450px){
+    .roadmap-acount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 360px;
+        padding: 0;
+        margin: 100px;
+    }
+    .chevron-right-solid{
+        display: none;
+    }
+    .horizonal-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        padding: 0;
+        margin: 0;
+    }
+    .horizonal-card>.card-comment{
+        text-align: center;
+    }
+    .horizonal-card:nth-of-type(1){
+        border-radius: 50px 50px 0 0 ;
+    }
+    .horizonal-card:nth-of-type(3){
+        border-radius: 0 0 50px 50px;
+    }
+}

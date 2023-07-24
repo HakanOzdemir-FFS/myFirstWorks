@@ -1,0 +1,114 @@
+.faqs {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.faqs-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+    flex-flow: row wrap;
+    width: 600px;
+    row-gap: 50px;
+    margin-right: 50px;
+}
+
+.contact-us-button {
+    background-color: transparent;
+    border: 2px solid #f6a;
+    color: #f6a;
+    font-size: 18px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.contact-us-button:hover {
+    background-color: #f6a;
+    transform: scale(1.2);
+    color: white;
+}
+
+.faqs-right {
+    width: 650px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 500px;
+}
+.faqs-question > .card-caption{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    min-width: 650px;
+    font-size: 22px;
+}
+.faqs-question{
+    transition: 0.3s;
+    border-bottom: 1px solid gray;
+}
+.faqs-question:nth-of-type(1){
+    border-top: 1px solid gray;
+    padding-top: 40px;
+}
+.card-caption>.arrow-right-solid {
+    margin: 0;
+    height: 20px;
+}
+.faqs-question > .already-text{
+    font-size: 18px; 
+    transition: 0.3s;
+}
+.card-caption:hover{
+    opacity: 0.5;
+}
+details[open] summary ~ * {
+    animation: open .5s ease-in-out;
+  }
+  @keyframes open {
+    0% {opacity: 0; margin-left:  -50px;}
+    100% {opacity: 1; margin-left:  0px;}
+  }
+
+  @media (max-width: 450px){
+    .faqs{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .faqs-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .faqs-left > .already-text{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        max-width: 300px;
+    }
+    .faqs-right{
+        width: 350px;
+    }
+    .faqs-question{
+        max-width: 350px;
+        
+    }
+    .faqs-question > .card-caption{
+        max-width: 350px;
+        white-space: wrap;
+        min-width: 350px;
+
+    }
+    summary > .card-caption{
+        max-width: 350px;
+    }
+    
+  }

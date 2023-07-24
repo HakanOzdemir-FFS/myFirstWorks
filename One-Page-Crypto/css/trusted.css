@@ -1,0 +1,70 @@
+.trusted-cryptocurrency-platform{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.third-card{
+    display: flex;
+    justify-content: center;
+    width: 1250px;
+}
+.arrow-right-solid{
+    filter: invert(51%) sepia(5%) saturate(7%) hue-rotate(329deg) brightness(98%) contrast(84%);
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.Crypto-Cryptocurrency-Image{
+    width: 200px;
+    height: 200px;
+}
+.cards{
+    margin-top: 100px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    border: 1px solid #7d98af;
+    border-radius: 20px;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.card-caption{
+    color: white;
+    font-size: 25px;
+}
+.card-comment{
+    width: 300px;
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+.cards:hover{
+    background-color: #212541;
+    
+}
+
+@media (max-width: 450px){
+    .trusted-cryptocurrency-platform{
+        row-gap: 50px;
+    }
+    .third-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+        max-width: 390px;
+    }
+    .cards{
+        max-width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+}
