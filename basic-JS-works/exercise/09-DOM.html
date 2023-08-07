@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p>YouTube Subscribe Button</p>
+    <button class="subscribeButton" onclick="
+
+    const buttonElement = document.querySelector('.subscribeButton')
+
+    if (buttonElement.innerHTML === 'Subscribe'){
+        buttonElement.innerHTML = 'Subscribed';
+    } else {
+        buttonElement.innerHTML = 'Subscribe';
+    }
+    ">Subscribe</button>
+    
+<br>
+<br>    
+<br>
+
+    <input placeholder="Text anything..." class="text1"
+    onkeyup="
+    sameText();
+    ">
+
+    <p class="text2"></p>
+    <script>
+
+        function sameText(){
+
+            const text1 = document.querySelector('.text1')
+            .value;
+            
+            document.querySelector('.text2').innerHTML = text1;
+        }
+        
+        
+
+    </script>
+</body>
+</html>

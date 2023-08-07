@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h3>Cart Quanity</h3>
+
+    <button
+     onclick="
+     console.log(`Card Quantity: ${variable}`);
+     ">Show Quantity</button>
+    <button
+    onclick="
+    updateCardQuantity('+1')
+    ">Add to Cart</button>
+    <button onclick="
+    updateCardQuantity('+2')
+    ">+2</button>
+    <button onclick="
+    updateCardQuantity('+3')
+    ">+3</button>
+    <button onclick="
+    updateCardQuantity('-2')
+    ">-2</button>
+    <button onclick="
+    updateCardQuantity('-3')
+    ">-3</button>
+    <button onclick="
+    updateCardQuantity('reset')
+    ">Reset Cart</button>
+    <p class="cardQuan"></p>
+
+    <script>
+        let variable = 0;
+
+        function updateCardQuantity(chooseOption){
+            if (chooseOption === '+1') {
+                variable++;
+            }
+            else if (chooseOption === '+2') {
+                variable += 2;
+            }
+            else if (chooseOption === '+3') {
+                variable +=3;
+            }
+            else if (chooseOption === '-2') {
+                variable -= 2;
+            }
+            else if ( chooseOption === '-3'){
+                variable -= 3;
+            }
+            else if (chooseOption === 'reset') {
+                variable = 0;
+            }
+
+            if (variable >= 10) {
+                alert('Your Basket is Full.')
+                variable = 10;
+            } else  if (variable <= 0) {
+                alert('Your Basket is Empty')
+                variable = 0;
+            }
+
+            document.querySelector('.cardQuan')
+            .innerHTML = `Card Quantity : ${variable}`
+        }
+    </script>
+</body>
+</html>

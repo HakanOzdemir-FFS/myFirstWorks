@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        padding: 30px;
+        font-size: 30px;
+      }
+      h1 {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <button class="js-button" onclick="changeColor();">Change The Color</button>
+
+    <script>
+      let index = 0;
+      let button = document.querySelector(".js-button");
+
+      function changeColor() {
+        const colors = ["red", "purple", "black", "orange", "yellow", "pink"];
+        document.getElementsByTagName("body")[0].style.background =
+          colors[index++];
+
+        if (index > colors.length) {
+          index = 0;
+        }
+        console.log(index);
+        document.querySelector("h1")
+          .innerHTML = `Color = ${colors[index-1]}`;
+      }
+    </script>
+  </body>
+</html>

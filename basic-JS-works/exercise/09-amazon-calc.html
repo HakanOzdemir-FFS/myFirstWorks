@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Calculator</title>
+</head>
+
+<body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+
+    <!--onKeyDown learn-->
+    <input class="orderInput" placeholder="Cost Of Order" onkeydown="
+        enterKey();
+        ">
+
+    <button onclick="calculate1();">Calculate</button>
+
+    <p class="costDollars"></p>
+
+    <script>
+
+
+
+        function calculate1() {
+
+            const costOfOrder = document.querySelector('.orderInput');
+
+            // Number fanction is string to number
+            let cost = Number(costOfOrder.value);
+
+            if (cost > 40) {
+                cost = cost;
+            } else if (cost < 40) {
+                cost += 10;
+            }
+ 
+            document.querySelector('.costDollars')
+                .innerHTML = `${cost}$`;
+
+        }
+
+        // Event.key is  you type into lissener
+        function enterKey() {
+            if (event.key === 'Enter') {
+                calculate1();
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

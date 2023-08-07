@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator
+
+    </title>
+</head>
+
+<body>
+    <div>
+        <p class="inputNumberArea"></p>
+    </div>
+    <div class="pressKey">
+        <div class="pressKeyColumns">
+            <p class="number js-number-1" onclick="updateCalculation('1')">1</p>
+            <p class="number js-number-4" onclick="updateCalculation('4')">4</p>
+            <p class="number js-number-7" onclick="updateCalculation('7')">7</p>
+            <p class="number js-number-0" onclick="updateCalculation('0')">0</p>
+        </div>
+        <div class="pressKeyColumns">
+            <p class="number" onclick="updateCalculation('2')">2</p>
+            <p class="number" onclick="updateCalculation('5')">5</p>
+            <p class="number" onclick="updateCalculation('8')">8</p>
+            <p class="number" onclick="updateCalculation('.')">.</p>
+        </div>
+        <div class="pressKeyColumns">
+            <p class="number" onclick="updateCalculation('3')">3</p>
+            <p class="number" onclick="updateCalculation('6')">6</p>
+            <p class="number" onclick="updateCalculation('9')">9</p>
+            <p class="number" onclick="
+            calculation = eval(calculation);
+
+            displayCalculation();
+
+            localStorage.setItem('calculation', calculation);
+            ">=</p>
+        </div>
+        <div class="pressKeyColumns">
+            <p class="operation" onclick="updateCalculation(' + ')">+</p>
+            <p class="operation" onclick="updateCalculation(' - ')">-</p>
+            <p class="operation" onclick="updateCalculation(' * ')">*</p>
+            <p class="operation" onclick="updateCalculation(' / ')">/</p>
+        </div>
+        <div class="pressKeyColumns">
+            <p class="number" onclick="
+            calculation = '';
+            displayCalculation();
+            localStorage.setItem('.inputNumberArea', calculation)
+            ">Clear</p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <script src="calc.js">
+    </script>
+</body>
+
+</html>

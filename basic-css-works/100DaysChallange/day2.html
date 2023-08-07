@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day2</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .container{
+      width: 500px;
+      height: 500px;
+      background-color:#3faf82;
+      border-radius: 3px;
+      box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.336);
+      
+    }
+    
+    .menu-icon:hover .hamburger-3{
+      animation: moveInCenterAtBottom 1s forwards; 
+    }
+
+    .menu-icon:hover .hamburger-1{
+      animation: moveInCenterAtTop 1s forwards ;
+      
+      
+    }
+    .menu-icon:hover .hamburger-2{
+      animation: moveInDead .5s forwards;
+    }
+
+    .menu-icon{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top:30%;
+      left: 20%;
+    }
+    .hamburger-1,.hamburger-2,.hamburger-3{
+      width: 100px;
+      height: 10px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.336);
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+    }
+    .hamburger-1{
+      transform: translateY(30px);
+      animation: moveInCenterAtBottom 1s reverse; 
+    }
+    .hamburger-3{
+      transform: translateY(-30px);
+      animation: moveInCenterAtTop 1s reverse; 
+    }
+    .hamburger-2{
+      animation: moveInDead 2s reverse;
+    }
+
+    @keyframes moveInCenterAtBottom{
+      0%{
+        transform: translateY(-30px);
+      }
+      50%{
+        transform: translateY(0px);
+      } 
+      100%{
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg);
+      }
+    }
+
+    @keyframes moveInCenterAtTop {
+      0%{
+        transform: translateY(30px);
+      }
+      50%{
+        transform: translateY(0);
+      }
+      100%{
+        transform: translate(-50%, -50%);
+        transform: rotate(-45deg);
+      }
+    }
+
+    @keyframes moveInDead{
+      0%{
+        transform: scale(100%);
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+        transform: scale(0%);
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu-icon">
+    <div class="hamburger-1"></div>
+    <div class="hamburger-2"></div>
+    <div class="hamburger-3"></div>
+    </div>
+  </div>
+
+  <script>
+    
+
+  </script>
+</body>
+</html>

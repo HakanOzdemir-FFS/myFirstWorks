@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Childeren and Senior 65 age</title>
+</head>
+
+<body>
+    <h3>Cart Quanity</h3>
+
+    <button onclick="
+     console.log(`Card Quantity: ${variable}`);
+     ">Show Quantity</button>
+    <button onclick="
+    variable++;
+    if (variable >= 10){
+            alert('Your Basket Full');
+            variable = 10
+        }
+    console.log(`Card Quantity: ${variable}`);
+    ">Add to Cart</button>
+    <button onclick="
+    variable += 2;
+    if (variable >= 10){
+            alert('Your Basket Full');
+            variable = 10
+        }
+    console.log(`Card Quantity: ${variable}`);
+    ">+2</button>
+    <button onclick="
+    variable += 3;
+    if (variable >= 10){
+            alert('Your Basket Full');
+            variable = 10
+        }
+
+    console.log(`Card Quantity: ${variable}`);
+    ">+3</button>
+    <button onclick="
+    variable -= 1;
+    if (variable <= 0){
+            alert('Not enough items in the cart');
+            variable = 0
+        }
+    console.log(`Card Quantity: ${variable}`);
+    ">Discard Item</button>
+    <button onclick="
+    variable -= 2;
+    if (variable <= 0){
+            alert('Not enough items in the cart');
+            variable = 0
+        }
+    console.log(`Card Quantity: ${variable}`);
+    ">-2</button>
+    <button onclick="
+    variable -= 3;
+    if (variable <= 0){
+            alert('Not enough items in the cart');
+            variable = 0
+        }
+    console.log(`Card Quantity: ${variable}`);
+    ">-3</button>
+
+    <button onclick="
+    variable = 0;
+    console.log(`Card Quantity: ${variable}`);
+    ">Reset Cart</button>
+
+    <script>
+        let variable = 0
+
+    </script>
+</body>
+
+</html>

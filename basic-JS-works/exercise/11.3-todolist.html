@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .todo-list-container,
+        .input-todo-container {
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+            align-items: center;
+
+        }
+
+        .input-todo-container {
+            margin-bottom: 10px;
+            align-items: stretch;
+        }
+
+        .caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .todo-name,
+        .todo-date {
+            padding: 10px;
+        }
+
+        .add-button {
+            padding: 10px 30px 10px 30px;
+            background-color: green;
+            color: white;
+        }
+
+        .delete-button {
+            background-color: red;
+            color: white;
+            display: block;
+            padding: 10px 23px 10px 22px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="caption">Todo List</p>
+    <div class="todo-list-container">
+        <input class="todo-name" placeholder="Todo Name">
+        <input class="todo-date" type="date">
+        <button class="add-button">Add</button>
+        <div class="input-todo-container">
+        </div>
+
+
+    </div>
+
+    <script>
+        const todoList = [{
+            name: 'margin-right',
+            date: '29.06.2023'
+        }];
+
+      
+
+        function updateToDo() {
+            let todoListHTML = '';
+            
+            todoList.forEach((todoObject, index) => {
+                const { name, date } = todoObject;
+                const html = `
+                <div>${name}</div>
+                <div>${date}</div>
+                <button class="delete-button js-delete-buttons">Delete</button>`;
+
+                todoListHTML += html;
+            });
+
+            document.querySelector('.input-todo-container')
+                .innerHTML = todoListHTML;
+
+            document.querySelectorAll('.js-delete-buttons')
+                .forEach((deleteButton, index) => {
+                    deleteButton.addEventListener('click', () => {
+                        todoList.splice(index, 1);
+                        updateToDo();
+                    })
+                })
+                
+                
+        }
+
+        document.querySelector('.add-button')
+            .addEventListener('click', () => {
+                toDO();
+            });
+
+        function toDO() {
+
+            const valueName = document.querySelector('.todo-name');
+            const valueDate = document.querySelector('.todo-date');
+            const date = valueDate.value;
+            const name = valueName.value;
+
+            todoList.push({
+                name,
+                date
+            });
+
+            valueName.value = '';
+            valueDate.value = '';
+            
+            updateToDo();
+            
+            
+        }
+
+    </script>
+</body>
+
+</html>
