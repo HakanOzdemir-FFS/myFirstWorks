@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+.frame {
+  @include center;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+}
+
+.center {
+  @include center;
+}
+
+.circle {
+  @include center;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.smallCircle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transform: rotate(random(300) + deg);
+  animation: downToBottom 2s infinite;
+}
+
+@keyframes downToBottom {
+  from {
+    transform: rotate(0);
+    transform: scale(2);
+    transform: translate3d(10px,10px,10px);
+
+  }
+  to {
+    transform: rotate(360deg);
+    transform: scale(1.5);
+    transform: translate3d(-55px,-55px,-55px);
+  }
+}
+
+  
+    

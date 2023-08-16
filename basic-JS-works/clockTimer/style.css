@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+
+.js-button{
+  background-color: lightblue;
+  font-size: 200px;
+  width: 100vw;
+  text-align: center;
+  border: 10px solid coral;
+}
+
+.start-stop,.reset{
+  font-size: 200px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.281);
+  transition: all 0.2s;
+}
+.start-stop:active, .reset:active{
+  box-shadow: 7px 10px 7px rgba(0, 0, 0, 0.534);
+  transform: translateY(3px);
+
+}
